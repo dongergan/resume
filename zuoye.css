@@ -6,13 +6,15 @@
     border: 1px solid gray;
     border-radius: 3px;
     padding: 1px 16px;
+    
 }
 .second{
     background: pink;
     border:none;
     border-left: 6px solid red;
     border-right: 6px solid red;
-   padding: 5px 4px;
+    padding: 5px 10px;
+   
    
 }
 .layout>div{
@@ -23,11 +25,12 @@
     border:none;
     border-top: 6px solid yellow;
     border-bottom: 6px solid yellow;
-   padding: 5px 4px;
+   padding: 5px 10px;
 }
 .forth{
     background:rgb(121, 221, 121);
     border:2px solid green;
     
     border-bottom: 6px solid green;
-   padding: 5px 4px;
+   padding: 5px 10px;
+}
