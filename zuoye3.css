@@ -1,0 +1,39 @@
+.layout{
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Arial;
+}
+.layout>table{
+    margin-top: 30px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.table1 th{
+    background: green;
+    color: white;
+    padding: 8px 8px;
+   
+    
+}
+.table1 tr:nth-child(even){
+    background-color:  #f1f1f1; 
+}
+.table1 td{
+    padding: 8px 8px;
+}
+.table2 td{
+    padding: 8px 8px;
+}
+.table2 tr:nth-child(even){
+    background-color:  #f1f1f1; 
+}
+.table2 th{
+    font-weight: bold;
+   
+    padding: 8px 8px;
+   
+    
+}
