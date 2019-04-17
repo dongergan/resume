@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1131085_6wtril9z0p5.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .layout{
+            min-width: 900px;
+            margin: 0 auto;
+        }
+        header{
+            position: relative;
+            height: 100%;
+           min-height: 600px;
+           background: url(http://pic.netbian.com/uploads/allimg/170609/123945-14969831856c4d.jpg);
+           background-size: cover;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .logo{
+            float: left;
+            font-family: arial;
+            font-size: 32px;
+            color: #f7ba3e;;
+            margin: 10px;
+        }
+        .nav{
+            float: right;
+        }
+        .nav>li{
+            float: left;
+            margin: 10px;
+        }
+        .nav a{
+            color: white;
+            font-size: 16px;
+            display: block;
+            border-radius: 4px;
+            padding: 5px;
+            font-family: arial;
+        }
+        .nav a:hover{
+            background-color: #f7ba3e;
+            
+        }
+        header .intro{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            color: white;
+            text-align: center;
+           
+        }
+        .intro .botton{
+            display: inline-block;
+            color: white;
+            font-size: 32px;
+            background-color: #f7ba3e;
+            border-radius: 4px;
+            padding: 5px 10px;
+            opacity: 0.8;
+        }
+        .intro .botton:hover{
+            opacity: 1;
+        }
+       header .intro h1{
+            font-size: 38px;
+        }
+       header .intro h2{
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        header .intro .botton{
+            margin-top: 20px;
+        }
+        section{
+            text-align: center;
+            margin-top: 30px;
+        }
+        section h1{
+            font-size: 40px;
+        }
+        section p{
+            margin-top: 10px;
+            padding: 10px 30px;
+        }
+        section > ul > li{
+            float: left;
+            width: 33.33%;
+        }
+        section > ul .iconfont{
+            font-size: 40px;
+            background-color: #f7ba3e;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="layout">
+       <div class="navbar  clearfix">
+            <a href="#" class="logo ">Start Project</a>
+            <ul class="nav">
+                <li><a href="#">SERVIVES</a></li>
+                <li><a href="#">PORFFOLIIO</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h1>Welcome To Our Studio</h1>
+            <h2>IT'S NICE TO MEET YOU!</h2>
+            <a class="botton" href="#">TELL ME MORE</a>
+        </div>
+    </header>
+    <main class="layout">
+        <section>
+            <h1>SERVICES</h1>
+            <P>Lorem ipsum dolor sit amet consectetur.</P>
+            <ul class="fixclear">
+                <li>
+                    <span class="icon-font icon-gouwuche"></span>
+                    <h2>E-Commerce</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+                <li>
+                    <span class="icon-font icon-diannao"></span>
+                    <h2>Responsive Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+                <li>
+                    <span class="icon-font icon-suo"></span>
+                    <h2>Web Security</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
