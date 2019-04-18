@@ -5,17 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1148299_utlrlwg8u0l.css">
     <style>
-        @font-face {
-font-family: 'iconfont';  /* project id 1131085 */
-src: url('//at.alicdn.com/t/font_1131085_ldvdcord6n.eot');
-src: url('//at.alicdn.com/t/font_1131085_ldvdcord6n.eot?#iefix') format('embedded-opentype'),
-url('//at.alicdn.com/t/font_1131085_ldvdcord6n.woff2') format('woff2'),
-url('//at.alicdn.com/t/font_1131085_ldvdcord6n.woff') format('woff'),
-url('//at.alicdn.com/t/font_1131085_ldvdcord6n.ttf') format('truetype'),
-url('//at.alicdn.com/t/font_1131085_ldvdcord6n.svg#iconfont') format('svg');
-}
         *{
             margin: 0;
             padding: 0;
@@ -26,9 +17,13 @@ url('//at.alicdn.com/t/font_1131085_ldvdcord6n.svg#iconfont') format('svg');
         li{
             list-style: none;
         }
+        body{
+            font:14px/1.5 arial;
+        }
         .layout{
             min-width: 900px;
             margin: 0 auto;
+            height: 100%;
         }
         header{
             position: relative;
@@ -93,7 +88,7 @@ url('//at.alicdn.com/t/font_1131085_ldvdcord6n.svg#iconfont') format('svg');
             font-size: 38px;
         }
        header .intro h2{
-            font-size: 50px;
+            font-size: 80px;
             margin-top: 20px;
         }
         header .intro .botton{
@@ -110,16 +105,163 @@ url('//at.alicdn.com/t/font_1131085_ldvdcord6n.svg#iconfont') format('svg');
             margin-top: 10px;
             padding: 10px 30px;
         }
-        section > ul > li{
+        .service > ul > li{
             float: left;
             width: 33.33%;
         }
-        section > ul .iconfont{
-            font-family: 'iconfont';
+        section > ul > li .iconfont{
             font-size: 40px;
-            background-color: #f7ba3e;
-            border-radius: 50%;
+           
         }
+        section .family figure{
+            width: calc(33.33% - 20px);
+            height: 300px;
+            margin:10px;
+            float: left;
+            
+        }
+       section .family img{
+            width: 100%;
+            height: 100%;
+        }
+        section .family a{
+            display: block;
+            height: 200px;
+            width: 100%;
+        }
+        section .family figure{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+        section .family figcaption{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        section .family  p{
+            color: #666;
+            margin-top: 5px;
+        }
+        .timeline > li::before{
+            content: '';
+            display: block;
+            clear: both;
+           
+        }
+   
+      section .timeline > li:nth-child(odd){
+          margin-top: 30px;
+          padding-right: calc(50% - 50px);
+          text-align: right;
+      }
+      section .timeline .img{
+          font-size: 20px;
+         width: 100px;
+         display: inline-block;
+        background-color: #f7ba3e;
+        padding-right: 5px;
+          height: 100px;
+          border-radius: 50%;
+          border: 3px solid lightblue;
+      }
+      section .timeline img{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 3px solid lightblue;
+      }
+      section .timeline > li:nth-child(odd) dl{
+          margin-right: 120px;
+      }
+      section .timeline > li:nth-child(odd) img{
+          float: right;
+      }
+      section .timeline > li:nth-child(even){
+          margin-top: 30px;
+          padding-left: calc(50% - 50px);
+          text-align: left;
+      }
+      section .timeline > li:nth-child(even) dl{
+          margin-left: 120px;
+      }
+      section .timeline > li:nth-child(even) img{
+          float: left;
+      }
+      section .timeline dt{
+          font-size: 24px;
+          font-weight: bold;
+      }
+      section .timeline dd:nth-of-type(1){
+          font-size: 18px;
+          font-weight: bold;
+      }
+      section .timeline > li{
+          position: relative;
+      }
+    .history li::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 4px;
+        background-color: lightblue;
+        left: 50%;
+        top: 105px;
+        height: 115px;
+    }
+    section li:last-child::before{
+        height: 0;
+    }
+    section .load {
+        width: 400px;
+        height: 80px;
+        border-radius: 2px;
+       float: left;
+    }
+    form h1, p{
+        text-align: center;
+    }
+    form h1{
+        margin-top: 60px;
+        font-size: 30px;
+       }
+       form p{
+           font-size: 15px;
+           margin-top: 20px;
+       }
+       form input{
+           width: 450px;
+           height: 70px;
+           border-radius: 4px;
+           margin: 20px 45px;
+       }
+       .messge{
+           height: 260px;
+           margin-top:60px;
+           float: right;
+           margin-right: 45px;
+       }
+       .record{
+           margin-top: 45px;
+       }
+       form .last-botton{
+         text-align: center;
+         font-size: 20px;
+       }
+       form a{
+           display: inline-block;
+           background-color: #f7ba3e;
+           border-radius: 4px;
+           color: white;
+           padding: 10px 20px;
+           opacity: 0.8;
+       }
+       form a:hover{
+           opacity: 1.0;
+       }
+       .service img{
+           width: 100px;
+           height: 100px;
+       }
     </style>
 </head>
 <body>
@@ -140,30 +282,133 @@ url('//at.alicdn.com/t/font_1131085_ldvdcord6n.svg#iconfont') format('svg');
             <a class="botton" href="#">TELL ME MORE</a>
         </div>
     </header>
-    <main class="layout">
-        <section>
+    <main class=>
+        <section class="service">
             <h1>SERVICES</h1>
             <P>Lorem ipsum dolor sit amet consectetur.</P>
             <ul class="fixclear">
                 <li>
-                    <span class="icon-font">&#xe613;</span>
+                    <span><img src="http://cdn.jscode.me/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" alt=""></span>
                     <h2>E-Commerce</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </li>
                 <li>
-                    <span class="icon-font">&#xe613;</span>
+                    <span><img src="http://cdn.jscode.me/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" alt=""></span>
                     <h2>Responsive Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </li>
                 <li>
-                    <span class="icon-font">&#xe63e;</span>
+                    <span><img src="http://cdn.jscode.me/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" alt=""></span>
                     <h2>Web Security</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </li>
             </ul>
         </section>
-        
+        <section>
+            <h1>PORTFOLIO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="family">
+                <figure>
+                    <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/roundicons.png" alt=""></a>
+                    <figcaption>ROUND ICONS</figcaption>
+                    <P>Graphic Design</P>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/startup-framework.png" alt=""></a>
+                    <figcaption>Startup Framework</figcaption>
+                    <P>Website Design</P>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/treehouse.png" alt=""></a>
+                    <figcaption>Treehouse</figcaption>
+                    <P>Website Design</P>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/golden.png" alt=""></a>
+                    <figcaption>Golden</figcaption>
+                    <P>Graphic Design</P>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/escape.png" alt=""></a>
+                    <figcaption>Escape</figcaption>
+                    <P>Graphic Design</P>
+                </figure>
+                <figure>
+                    <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/dreams.png" alt=""></a>
+                    <figcaption>Dreams</figcaption>
+                    <P>Graphic Design</P>
+                </figure>
+            </div>
+        </section>
+        <section class="history">
+            <h1>ABOUT</h1>
+            <P>Lorem ipsum dolor sit amet consectetur.</P>
+            <ul class="timeline">
+                <li>
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                    <dl>
+                        <dt>2009-2011</dt>
+                        <dd>Our Humble Beginnings</dd>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/2.jpg" alt="">
+                    <dl>
+                        <dt>MARCH 2011</dt>
+                        <dd>An Agency is Born</dd>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/3.jpg" alt="">
+                    <dl>
+                        <dt>DECEMBER 2012</dt>
+                        <dd>Transition to Full Service</dd>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/4.jpg" alt="">
+                    <dl>
+                        <dt>JULY 2014</dt>
+                        <dd>Phase Two Expansion</dd>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                    </dl>
+                </li>
+                <li>
+                    <span class="img">BE PART OF OUR STORY!</span>
+                </li> 
+            </ul>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+       <form action="">
+            <h1>CONTACT US</h1>
+            <P>Lorem ipsum dolor sit amet consectetur.</P>
+            <div class="messge clearfix">
+                    <textarea class="message" name="" id="" cols="80" rows="20" border-radius="4px" placeholder="YOUR MESSAGE*"></textarea>
+            </div>
+            <ul class="record">
+                <li>
+                    <input class="name" type="text" placeholder="YOUR NAME*" >
+                </li>
+                <li>
+                    <input class="email" type="text" placeholder="YOUE EMAIL*">
+                </li>
+                <li>
+                    <input class="phone" type="text" placeholder="YOUR PHONE*">
+                </li>
+                
+            </ul>
+            <div class="last-botton">
+                <a href="#">SEND MESSAGE</a>
+            </div>
+            
+         </form>       
+           
+           
+              
+    </footer>
 </body>
 </html>
